@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Simons Game - Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/login.css"             />
+        <link rel="stylesheet" type="text/css" href="css/grid/logingrid.css"    />
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+        <!-- Javascript/Jquery -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+
+    </head>
+
+    <body>
+
+    <div id="container">
+
+        <header>
+            <a href="index.html">
+            <h1>Simons Game Login</h1>
+            <h2>Please do your best!</h2>
+            </a>
+
+        </header>
+
+        <aside id="leftTop"></aside>
+        <aside id="leftBot"></aside>
+
+            <div id="loginsector">
+
+                <div id="infoText">
+                    <ol>
+                        <li>
+                            <p>Your score offers important research data!</p>
+                        </li>
+                        <li>
+                            <p>Play all for stages of Simon</p>
+                        </li>
+                        <li>
+                            <p>Repeat the longest sequences you can</p>
+                        </li>
+                        <li>
+                            <p>Return for a total of ten sessions</p>
+                        </li>
+                    </ol>
+                </div>
+
+                <hr>
+
+                <form id="login" action="http://localhost:63342/loginSimons/thanks.html" method="post">
+
+                    <ul class="loginFieldsTable">
+
+                        <li class="loginFields">
+                            <label><h3>Create Account</h3></label>
+                        </li>
+                        <li class="loginFields fLeft">
+                          <label for="mail">Email Address:</label>
+                        </li>
+                        <li class="loginFields fLeft">
+                          <input type="email" id="email"
+                                 placeholder="JohnDoe@example.com" required="required">
+                        </li>
+                        <li class="loginFields fLeft">
+                          <label for="psw">Password:</label>
+                        </li>
+                        <li class="loginFields fLeft">
+                          <input type="password" name="psw"
+                                 placeholder="Please enter your password here" required="required"
+                                 style="width: 200px">
+                        </li>
+                        <li class="loginFields">
+                            <select>
+                                <option value="fr">France</option>
+                                <option value="ger">Germany</option>
+                                <option value="mex">Mexico</option>
+                                <option value="us" selected="selected">United States</option>
+                            </select>
+                            <input type="number" name="age" placeholder="age" style="width: 40px">
+                            <select>
+                                <option value="female">female</option>
+                                <option value="male">male</option>
+                                <option value="us" selected="selected">Gender</option>
+                            </select>
+                        </li>
+                        <li><h3 id="dig">Diagnosis?</h3></li>
+                        <li class="loginFields">
+                            <label>
+                                <input type="radio" name="kind" value="normal" checked="checked">
+                                Normal ( Healthy / None )
+                            </label>
+                        </li>
+                        <li class="loginFields">
+                            <label>
+                                <input type="radio" name="kind" value="decline">
+                                Decline ( Alzheimer´s / Dementia )
+                            </label>
+                        </li>
+                        <li class="loginFields">
+                            <label>
+                                <input type="radio" name="kind" value="affected">
+                                Affected ( Brain Injury / Stroke / Aneurism )
+                            </label>
+                        </li>
+                        <li class="loginFields">
+                            <label>
+                                <input type="radio" name="kind" value="developmental">
+                                Developmental ( Dyslexia / Learning Disability )
+                            </label>
+                        </li>
+                        <li class="loginFields">
+                            <button class="buttons" type="submit" id="subButton">Submit</button>
+                        </li>
+
+                    </ul>
+                </form>
+
+            </div>
+
+        <footer>
+
+
+
+        </footer>
+
+        <aside id="rightTop"></aside>
+        <aside id="rightBot"></aside>
+
+        </div>
+
+    <!-- Javascript -->
+
+    </body>
+
+</html>
